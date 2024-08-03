@@ -1,51 +1,69 @@
-# NBA Analysis Projects
+# 🏀 NBA Analysis Projects
 
-Welcome to my GitHub repository dedicated to comprehensive NBA analysis! This repository contains multiple projects, each focusing on different aspects of NBA player statistics and trends. Below, you will find detailed descriptions of the projects along with links to the analysis files, relevant code snippets and visualizations. Dive in to explore the fascinating world of NBA analytics! 
+Welcome to my GitHub repository dedicated to comprehensive NBA analysis! This repository contains multiple projects, each focusing on different aspects of NBA player statistics and trends. Below, you will find detailed descriptions of the projects along with links to the analysis files, relevant code snippets, and visualizations. Dive in to explore the fascinating world of NBA analytics! 
 <br>
 <br>
-## Projects Overview
+## 📈 Project 1: [Determinants of NBA Players' Career Length - Statistical Analysis](https://github.com/GrzegorzPus/NBA_analysis/blob/main/NBA%20players'%20career%20lengths.ipynb)
 
-### 1. Determinants of NBA Players' Career Length - Statistical Analysis
-This project includes a detailed description of the data used for model building and the process of constructing and evaluating the statistical model. These data encompass a variety of variables concerning NBA players, such as game statistics, physical characteristics, and other factors that may influence the length of their careers. \
-The model building process began with data preparation, which involved cleaning and transforming the data into the appropriate format. An exploratory data analysis was then conducted to understand the structure of the data and identify potential significant variables. Linear regression techniques were used to build a basic model and assess the linear impact of variables on the players' career length. However, to better capture the nonlinear relationships between variables, nonlinear models were also applied. \
-In the further part of the study, advanced machine learning techniques were employed, including decision trees, random forests, and the k-nearest neighbors method. These models allowed for more comprehensive data analysis and better prediction of NBA players' career length. Each model was meticulously evaluated for effectiveness using appropriate evaluation metrics such as R^2, mean squared error (MSE), and other statistical measures. \
-The impact of individual variables on the career length of NBA players was analyzed, enabling the identification of the most important factors. The results of the analysis were interpreted, highlighting the significance of particular variables and their potential importance in the context of managing players' careers and NBA team strategies.
-<br>
-<br>
-#### Analysis Files
-- [NBA players'career length analysis](https://github.com/GrzegorzPus/NBA_analysis/blob/main/NBA%20players'%20career%20lengths.ipynb) - This file contains the detailed analysis of the determinants affecting the length of NBA careers.
+This project includes a detailed description of the data used for model building and the process of constructing and evaluating the statistical model. These data encompass a variety of variables concerning NBA players, such as game statistics, physical characteristics, and other factors that may influence the length of their careers.
 <br>
 
-#### Key Findings
-Some of the key determinants analyzed include:
-- **Player Performance Metrics**: Points per game, assists, rebounds, etc.
-- **Non-Basketball Factors**: Age, height, weight and nationality.
+1. **Data Preparation**:
+   - Cleaned and transformed the data into the appropriate format for analysis.
+
+2. **Exploratory Data Analysis**:
+   - Conducted to understand the structure of the data and identify potential significant variables.
+
+3. **Linear and Nonlinear Models**:
+   - Used linear regression techniques to build a basic model and applied nonlinear models to capture the nonlinear relationships between variables.
+
+4. **Advanced Machine Learning Techniques**:
+   - Employed decision trees, random forests, and the k-nearest neighbors method to analyze data comprehensively and predict NBA players' career length.
+
+5. **Model Evaluation**:
+   - Each model was meticulously evaluated using metrics such as R^2, mean squared error (MSE), and other statistical measures.
+
+6. **Variable Impact Analysis**:
+   - Analyzed the impact of individual variables to identify the most important factors influencing career length.
 <br>
 
-#### Sample Code
-```python
-plt.figure(figsize=(16,7))
-sns.residplot(x=np.arange(len(model.resid)), y=model.resid, lowess=False, color="g")
-plt.title('Chart of residuals')
-plt.xlabel('Number of observation')
-plt.ylabel('Residuals')
-plt.show()
+   ### 📊 Example Visualizations
 
-white_test = het_white(model.resid, X)
-p_value = white_test[1]
-
-print(f'P-value: {p_value}')
-
-alpha = 0.05
-if p_value > alpha:
-    print('There is no significant evidence of heteroskedasticity in the residuals')
-else:
-    print('Significant evidence of heteroskedasticity in the residuals was detected')
-```
-You can read a deeper analysis with all the visualisations, descriptions and conclusions in the project above.
+   ![image](https://github.com/user-attachments/assets/ad1d08b7-18b8-4a13-909c-859dbfaca973)
+   *Chart of residuals*
 <br>
 <br>
 
+   ### 🔑 Key Findings
+   Some of the key determinants analyzed include:
+   - **Player Performance Metrics**: Points per game, assists, rebounds, etc.
+   - **Non-Basketball Factors**: Age, height, weight and nationality.
+<br>
+
+   ### 🛠️ Technologies
+   - **Programming Languages**: Python
+  - **Python**: `pandas`  `numpy` `matplotlib` `statsmodels` `sklearn` `spicy`
+<br>
+
+   ### 👨‍💻 Sample Code
+   ```python
+   plt.figure(figsize=(16,7))
+   sns.residplot(x=np.arange(len(model.resid)), y=model.resid, lowess=False, color="g")
+   plt.title('Chart of residuals')
+   plt.xlabel('Number of observation')
+   plt.ylabel('Residuals')
+   plt.show()
+
+   white_test = het_white(model.resid, X)
+   p_value = white_test[1]
+
+   print(f'P-value: {p_value}')
+
+   alpha = 0.05
+   if p_value > alpha:
+       print('There is no significant evidence of heteroskedasticity in the residuals')
+   else:
+       print('Significant evidence of heteroskedasticity in the residuals was detected')
 ### 2. Analysis of NBA Player Heights
 Height is a crucial factor in basketball, influencing a player's position and role on the team. This project examines the distribution of player heights and how they have evolved over time. \
 Our analysis delves into the evolution of the average height of NBA players across different eras, identifying observable trends and patterns. This section specifically concentrates on how the typical height for each position—guard, forward, and center—has transformed over the years. We examine the implications of these height changes for team strategies and player roles within the league. \
