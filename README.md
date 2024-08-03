@@ -27,7 +27,7 @@ This project includes a detailed description of the data used for model building
    - Analyzed the impact of individual variables to identify the most important factors influencing career length.
 <br>
 
-   ### 📊 Example Visualizations
+   ### 📊 Example Visualization
 
    ![image](https://github.com/user-attachments/assets/ad1d08b7-18b8-4a13-909c-859dbfaca973)
    *Chart of residuals*
@@ -64,25 +64,40 @@ This project includes a detailed description of the data used for model building
        print('There is no significant evidence of heteroskedasticity in the residuals')
    else:
        print('Significant evidence of heteroskedasticity in the residuals was detected')
-### 2. Analysis of NBA Player Heights
-Height is a crucial factor in basketball, influencing a player's position and role on the team. This project examines the distribution of player heights and how they have evolved over time. \
-Our analysis delves into the evolution of the average height of NBA players across different eras, identifying observable trends and patterns. This section specifically concentrates on how the typical height for each position—guard, forward, and center—has transformed over the years. We examine the implications of these height changes for team strategies and player roles within the league. \
-By scrutinizing historical data, we can observe significant shifts in the physical profiles of players occupying different positions. For instance, guards have not only become taller but also more versatile, impacting the dynamics of backcourt play. Forwards have evolved in both height and skill set, reflecting the modern game's demands for multi-functional players who can stretch the floor. Centers, traditionally the tallest players on the court, have seen variations in average height corresponding with changes in playing style, such as the increased emphasis on perimeter shooting and agility. \
-These height trends are not merely statistical curiosities; they have profound implications for how teams construct their rosters and devise their strategies. Taller guards might suggest a shift towards a more defensively robust and versatile backcourt, while the evolving role of forwards indicates a need for players who can adapt to multiple positions and responsibilities. The changing profile of centers underscores the ongoing transition from traditional post play to a more dynamic, perimeter-oriented approach.
-<br>
-<br>
-#### Analysis Files
-- [Height and weight](https://github.com/GrzegorzPus/NBA_analysis/blob/main/Height%20and%20weight.ipynb)
+   ```
+---
 <br>
 
-#### Key Findings
-- **Guards**: there has been an increase in average height along with greater versatility and defensive skills, significantly impacting the dynamics of backcourt play
-- **Forwards**: have evolved in both height and skill set, reflecting the modern game's demand for multi-functional players capable of adapting to various roles and extending play to the perimeter
-- **Centers**: have experienced changes in average height corresponding with a shift from traditional post play to a more dynamic, perimeter-oriented style, emphasizing mobility and shooting abilities
+## 📈 Project 2: [Analysis of NBA Player Heights](https://github.com/GrzegorzPus/NBA_analysis/blob/main/Height%20and%20weight.ipynb)
+Height is a crucial factor in basketball, influencing a player's position and role on the team. This project examines the distribution of player heights and how they have evolved over time.
+
+1. **Data Preparation**:
+   - Cleaned and transformed the data into the appropriate format for analysis.
+
+2. **Exploratory Data Analysis**:
+   - Conducted to understand the structure of the data and identify potential significant variables.
 <br>
 
-#### Sample Code
-```python
+   ### 📊 Example Visualization
+
+   ![image](https://github.com/user-attachments/assets/93bb535f-f512-45bc-879d-c3e8fd784b67)
+   *The Average Height Depending on the Draft Year by Position*
+<br>
+<br>
+
+   ### 🔑 Key Findings
+   - **Guards**: there has been an increase in average height along with greater versatility and defensive skills, significantly impacting the dynamics of backcourt play
+   - **Forwards**: have evolved in both height and skill set, reflecting the modern game's demand for multi-functional players capable of adapting to various roles and extending play to the perimeter
+   - **Centers**: have experienced changes in average height corresponding with a shift from traditional post play to a more dynamic, perimeter-oriented style, emphasizing mobility and shooting abilities 
+<br>
+
+   ### 🛠️ Technologies
+   - **Programming Languages**: Python
+  - **Python**: `pandas`  `numpy` `matplotlib` `seaborn`
+<br>
+
+   ### 👨‍💻 Sample Code
+   ```python
 fig, axs = plt.subplots(2, 3, figsize=(16, 9), sharex=True)
 
 def plot_average_weight(ax, df, position_name):
@@ -107,5 +122,18 @@ fig.text(0, 0.5, 'Average weight [kg]', va='center', rotation='vertical', fontsi
 
 plt.tight_layout()
 plt.show()
-```
-You can read a deeper analysis with all the visualisations, descriptions and conclusions in the project above.
+   ```
+---
+<br>
+
+## 👥 Contact
+
+If you have any questions about the projects or would like to discuss potential collaborations, feel free to reach out:
+
+- **[LinkedIn](https://www.linkedin.com/in/grzegorz-pu%C5%9B/)**
+
+Thank you for visiting my repository!
+
+---
+
+#Python #DataAnalysis #MachineLearning #LinearRegression #NBA  #Modeling #StatisticalTests
